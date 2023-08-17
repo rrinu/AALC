@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center; 
     height: 80vh;
-    width:60%;
+    width:60vw;
     margin: 5px auto;
 }
 
@@ -111,10 +111,16 @@
 }
      
 @media (max-width :919px) {
+  .about-whole{
+    margin-top: 2rem;
+    height:80vh;
+  }
     .about{
-        margin:2px auto;
-        width:80%;
+        margin: auto;
+        width:100vw;
+        height: 60vh;
         position: relative;
+        background-image: url('./About-img.jpeg');
     }
     .about-img{
         display: none;
@@ -122,10 +128,9 @@
     .para{
         position: absolute;
         margin-top: 2px;
-        background-image: url('./About-img.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 3px;
+        padding: 12px;
     }
     .header{
         font-size: larger;
@@ -136,11 +141,13 @@
     }
 
     .Ask-Me{
+      margin-top: 1rem;
         display: inline-flex;
+
     }
     .Ask-Me h1{
         font-size: medium;
-        margin: 2px auto;
+        margin: 1px auto;
     }
     .Ask-Me .Ask-button{
         height:30%;

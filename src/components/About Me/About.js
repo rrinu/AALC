@@ -3,15 +3,10 @@ import './About.css';
 import AboutImg from './About-img.jpeg';
 
 const About = () => {
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-
-  useEffect(() => {
-    setShouldAnimate(true);
-  }, []);
 
   return (
-    <div>
-      <div className={`about ${shouldAnimate ? 'slide-in' : ''}`}>
+    <div className='about-whole'>
+      <div className='about'>
         <img className='about-img' src={AboutImg} alt="About Image" />
         <div className='para'>
           <h1 className="header">About Me</h1>
@@ -24,7 +19,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className={`Ask-Me ${shouldAnimate ? 'slide-in' : ''}`}>
+      <div className='Ask-Me'>
         <h1>QUESTIONS ABOUT A JUDICIAL ISSUE?</h1>
         <button className='Ask-button'>Click to Ask</button>
       </div>

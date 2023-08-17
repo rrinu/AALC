@@ -1,13 +1,12 @@
 import React from 'react';
 import './home.css';
-import vid from './home-video.mp4';
 import logo from './logo.png.png';
 import { FaLinkedin, FaEnvelope, FaWhatsapp} from 'react-icons/fa';
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="video-container">
+      <div className="home-whole">
         <div className='name'>
             <img className='logo-top' src={logo}></img>
             <div className="text">
@@ -30,17 +29,10 @@ class Home extends React.Component {
             <li><a href="mailto:adv.amalansari@gmail.com"><FaEnvelope /></a></li>
           </ul>
         </div>
-        <div className="video-wrapper">
-          <video className="video" autoPlay loop muted>
-            <source src={vid} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
         <img className="overlay-image" src={logo} alt="Overlay" />
-        <h1 className="slogan">Come, let's look law differently..</h1>
+        <h1 className="slogan">Come,lets look <span className='slogan-dark'>law</span> differently..</h1>
       </div>
     );
   }
 }
-  
 export default Home;

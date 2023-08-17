@@ -6,11 +6,14 @@ import logo from '../Home/logo.png.png'
 class Footer extends React.Component{
     render(){
         return(
+            <div className='footer-whole'>
             <div className='footer'>
                 <div className='footer-flex'>
                 <div className='logo-div'>
-                <img src={logo} className='footer-logo'></img>
-                <h4 className='footer-header'>Amal&nbsp; Ansari&nbsp; Legal&nbsp; Consultancy</h4>
+                    <center>
+                        <img src={logo} className='footer-logo'></img>
+                        <h4 className='footer-header'>Amal&nbsp; Ansari&nbsp; Legal&nbsp; Consultancy</h4>
+                    </center>
                 </div>
                 <div className='quick-links'>
                     <h4 className='link-header'>Quick&nbsp;&nbsp;&nbsp;Links</h4>
@@ -41,6 +44,7 @@ class Footer extends React.Component{
                 <p className='copyright-display'><div className='one'>&copy; Copyright 2023 </div> <div className='two'>Designed by <span className='rinu'> Rinu Rahim </span></div>
                 <div className='three'>All rights reserved <span className='amal'> Amal Ansari Legal Consultancy</span></div></p>
                 </div>
+            </div>
             </div>
         );
     }
