@@ -1,0 +1,154 @@
+.footer-whole{
+    background-color: black;
+    height:100%;
+    width:100vw;
+}
+.footer{
+    margin-top: 10px;
+}
+
+.footer-flex{
+    padding-bottom: 5rem;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.logo-div{
+    padding-left: 6rem;
+}
+
+.footer-logo{
+    padding-left: 2.5rem;
+    margin-top: 130px;
+    width:200px;
+    height: 170px;
+}
+
+.footer-header{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+.quick-links, .social-links{
+    margin-top: 130px;
+}
+
+.link-header,.social-header{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quick-link,.social-link{
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.social-link{
+    padding-left: 15px !important;
+}
+
+.social-link a,.quick-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-link a:hover,.quick-link a:hover{
+    color: rgb(139, 139, 245);
+}
+
+.social-link li,.quick-link li{
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.social-link-mobile{
+    display: none;
+}
+
+.copyright-display{
+    text-align: center;
+   }
+.copyright{
+    color:white;
+   }
+.rinu{
+    color: wheat;
+}
+.amal{
+    color:rgb(243, 133, 133);
+}
+
+@media (max-width :767px){
+    .footer-whole{
+        height: 75vh;
+    }
+    .footer-flex{
+        display: block;
+        padding-bottom: 1px !important;
+    }
+
+    .logo-div{
+        padding-left: 2px;
+    }
+    .footer-header{
+        font-size: 1rem;
+        margin-top: 2px;
+    }
+    .footer-logo{
+        padding-right: 15px;
+        margin-top: 1rem;
+        width:150px;
+        height:100px;
+    }
+    .quick-links{
+        margin-top: 40px;
+        text-align: center;
+        padding-bottom: 1px !important;
+    }
+   .link-header{
+    font-size: 1rem;
+   }
+   .quick-link{
+    font-size:.8rem;
+    padding-right: 30px;
+   }
+   .link-header{
+    text-decoration:underline;
+   }
+   .social-links{
+    display: none;
+   }
+    .social-link-mobile a{
+        color: white;
+        text-decoration: none;
+        padding-right: 1rem;
+        text-align: center;
+    }
+    .social-link-mobile a:hover{
+        color: blue;
+    }
+   
+    .social-link-mobile{
+        font-size: 1.3rem;
+        display: flex;
+        list-style: none;
+        margin-top: 1px;
+        padding-left: 40%;
+    }
+   .copyright-display{
+    display: block;
+   }
+   .one,.two,.three{
+        font-size: .8rem;
+   }
+
+}
+@media only screen and (min-height : 768px)  and (max-height : 1024px){
+    .footer-whole{
+        height: 60vh;
+        background-color: black;
+    }
+}  

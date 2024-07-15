@@ -1,0 +1,194 @@
+.about{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80vh;
+    width:60vw;
+    margin: 5px auto;
+}
+
+.header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    .about-img {
+        height: 28rem;
+        margin-right: 20px;
+        perspective: 2000px;
+        box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.7);
+        border: 1px solid black;
+        animation: slideIn 1s forwards;
+      }
+      
+
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+
+      .para {
+        margin-top: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+        position: relative;
+        padding-right: 20px;
+        animation: slideUp 1s forwards;
+      }
+
+      @keyframes slideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+.para::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 2px;
+    background-color: #000;  
+      }
+
+.para::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right:25%;
+    transform-origin: bottom right;
+    transform: translateX(50%) scaleY(0.5);
+    width: 50%;
+    height: 2px;
+    background-color: #000; 
+      }
+
+      
+.Ask-Me{
+    width:100vw;
+    height:20vh;
+    background-color:rgb(53, 48, 48);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Ask-Me h1{
+    color: aliceblue;
+    margin-left: 40px;
+    margin-right: 30rem;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+.Ask-Me .Ask-button{
+    height:40%;
+    width:10%;
+    background-color: #000;
+    color: azure;
+    font-size: larger;
+    margin-right: 10px;
+    border-top: 1.5px solid orange;
+    border-left:1.5px solid  orange;
+    animation: wiggle 2s linear infinite;
+    display: inline-block; 
+  text-align: center; 
+  line-height: 40px; 
+  text-decoration: none; 
+}
+
+.Ask-Me .Ask-button:hover{
+    background-color: #645f5f;
+}
+
+@media(max-width :1034px){
+    
+
+}
+     
+@media (max-width :919px) {
+  .about-whole{
+    margin-top: 2rem;
+    height:90vh;
+  }
+    .about{
+        margin: auto;
+        width:100vw;
+        height: 60vh;
+        position: relative;
+        background-image: url('./About-img.jpeg');
+    }
+    .about-img{
+        display: none;
+    }
+    .para{
+        position: absolute;
+        margin-top: 2px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 12px;
+    }
+    .header{
+        font-size: larger;
+    }
+    .para p{
+        font-size:medium;
+        color: white;
+    }
+
+    .Ask-Me{
+      margin-top: 1rem;
+        display: inline-flex;
+
+    }
+    .Ask-Me h1{
+        font-size: medium;
+        margin: 1px auto;
+    }
+    .Ask-Me .Ask-button{
+        height:30%;
+        width:30%;
+        background-color: #000;
+        color: azure;
+        font-size: small;
+        margin-right: 10px;
+        
+    }
+    
+}

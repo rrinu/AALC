@@ -1,0 +1,111 @@
+.enquiry{
+    height:90vh;
+    background-image: url('./justice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  overflow: hidden;
+}
+
+.enquiry-header{
+    font-family: Luminari;
+    margin-left:150px;
+    font-size: 3rem;
+    margin-right: 8rem;
+    font-weight: 800;
+}
+
+.red{
+    color: rgba(252, 10, 10, 0.988);
+}
+
+.enquiry-header, .form{
+    color: white;
+}
+
+.enquire-now{
+    font-family: Luminari;
+    font-size: x-large;
+    color: rgb(228, 10, 10);
+}
+
+form{
+  margin-left:2rem;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    width:25rem;
+    height:2rem;
+    border:2px solid black;
+    border-radius: 12px;
+}
+
+textarea{
+    width:25rem;
+    height:10rem;
+    border:2px solid black;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.form-group label {
+  color: white;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .enquire-button{
+    width:25%;
+    height:3rem;
+    background-color: rgb(242, 5, 5);
+    border-radius: 10px;
+  }
+
+  .enquire-button:hover{
+    background-color: rgb(251, 111, 111)
+  }
+
+  @media (max-width: 1256px){
+    .enquiry{
+        height: 100vh;
+        justify-content: center;
+    }
+    .enquiry-header{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: xx-large;
+    }
+  }
+
+  @media (max-width: 768px){
+    .enquiry{
+      height: 95vh;
+      width:100vw;
+    }
+    .red {
+        display: block;
+        clear: both;
+      }
+      .form-group label{
+        color: white;
+      }
+      input{
+        width:15rem;
+        height:2rem;
+      }
+      textarea{
+        width:15rem;
+        height:8rem; 
+      }
+      .enquire-now{
+        margin-top: 5px;
+      }
+  }
