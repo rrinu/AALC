@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
-import AboutImg from './About-img.jpeg';
+import AboutImg from './About-img.jpg';
 import {link} from 'react-router-dom';
 
 const About = () => {
@@ -13,11 +13,13 @@ const About = () => {
         <div className='para'>
           <h1 className="header">About Me</h1>
           <p>
-            I am an accomplished legal professional with a passion for delivering results. My expertise is broad, including Criminal Law, Family Law, Banking Law,
-            Labor Law, Telecom Law, Corporate Law, and maintaining strong client relationships. I am committed to providing exceptional service to my clients and
-            have built a reputation for going above and beyond to achieve their goals. My passion for law and administration, coupled with my extensive experience
-            and commitment to excellence, make me a valuable asset to any legal team. I am confident in my ability to exceed expectations and deliver results in
-            any legal setting, and I look forward to continuing to take on new challenges and opportunities in the future.
+          I am a Seasoned Legal Professional, equipped with a Bachelor of Laws degree. With a solid foundation in legal principles and practices, I bring a wealth of expertise to my role.
+
+In addition to my proficiency in contract drafting, board resolutions, and related documents, I play a pivotal role in analyzing legal issues and providing guidance on compliance with UAE and international laws. I actively contribute to crucial activities within the Abu Dhabi Global Market, including incorporation processes.
+<br />
+My extended focus lies in drafting contracts while ensuring meticulous adherence to AML/CFT compliance. By combining my legal acumen with a thorough understanding of regulatory requirements, I help navigate complex legal landscapes and safeguard our company's interests.
+
+Throughout my career, I have successfully managed a diverse range of legal projects, including negotiating contracts with global partners, performing comprehensive legal audits, and effectively resolving intricate disputes. My unwavering dedication to professional growth and my passion for making a lasting impact in the ever-evolving legal realm drive me forward.
           </p>
         </div>
       </div>

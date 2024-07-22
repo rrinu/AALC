@@ -16,6 +16,34 @@
     font-size: 3rem;
     margin-right: 8rem;
     font-weight: 800;
+    display: inline-block;
+    animation: wave 3s;
+}
+
+
+
+.enquiry-header span:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.enquiry-header span:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translateY(-50px); /* Start above the final position */
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px); /* Move below the final position */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0); /* Settle into the final position */
+    opacity: 1;
+  }
 }
 
 .red{
