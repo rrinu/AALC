@@ -8,6 +8,21 @@ import corporate from './corporate law.jpg';
 import it from './it law.jpg';
 
 class Expertise extends React.Component{
+    componentDidMount() {
+        const cards = document.querySelectorAll('.img-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('zoom', 'color');
+                } else {
+                    entry.target.classList.remove('zoom', 'color');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => observer.observe(card));
+    }
+
     render(){
         return(
             <section id="services">

@@ -1,44 +1,47 @@
-.expertise{
+.expertise {
     width: 100vw;
 }
 
-.exp-header{
-    font-family:'Times New Roman', Times, serif;
+.exp-header {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-bottom: 3px;
 }
 
-.img-card{
-    height:200px;
-    width:350px;
-    filter: grayscale(100%);
-    transform: scale(1);
-    transition: filter 0.01s ease-in-out;
-}
-
-.img-card:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-}
-
-.cards{
+.cards {
     margin-top: 1px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.card1,.card2,.card3,.card4,.card5,.card6{
+.card1, .card2, .card3, .card4, .card5, .card6 {
     margin-left: 50px;
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 18px;
-    border:1px solid black;
+    border: 1px solid black;
     overflow: hidden;
+    position: relative;
 }
 
+.img-card {
+    height: 200px;
+    width: 350px;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    transform: scale(1);
+}
 
-.cards h3{
-    height:40px;
+.zoom {
+    transform: scale(1.2); /* Zoom-in effect */
+}
+
+.color {
+    filter: grayscale(0%); /* Remove grayscale effect */
+}
+
+.cards h3 {
+    height: 40px;
     background-color: black;
     text-align: center;
     color: white;
@@ -50,28 +53,31 @@
 
 .cards h3:hover {
     transform: scale(1.4);
-  }
+}
 
-  @media (max-width :767px){
-    .cards h3{
+@media (max-width: 767px) {
+    .cards h3 {
         transition: transform 0.3s ease-in-out;
     }
+
     .cards h3:hover {
         transform: scale(1.4);
-      }
-    
-    .expertise{
+    }
+
+    .expertise {
         margin-top: 1rem;
     }
-    .card1,.card2,.card3,.card4,.card5,.card6{
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
         margin-left: auto;
         margin-right: auto;
-        margin-top:25px;
+        margin-top: 25px;
         margin-bottom: 18px;
     }
-    .img-card{
-        transition: filter 0.01s ease-in-out;
-        height:200px;
-        width:250px;
+
+    .img-card {
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        height: 200px;
+        width: 250px;
     }
 }

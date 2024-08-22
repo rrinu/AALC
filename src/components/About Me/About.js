@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
 import AboutImg from './About-img.jpg';
-import {link} from 'react-router-dom';
+
 
 const About = () => {
 
