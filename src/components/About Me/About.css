@@ -143,9 +143,10 @@
   }
   .about {
     margin: auto;
-    width: 100vw;
-    height: 60vh;
+    width: 95vw;
+    height:60vh;
     position: relative;
+    padding-right: 5px;
     background-image: url('./About-img.jpg');
   }
   .about-img {
@@ -181,5 +182,8 @@
     color: azure;
     font-size: small;
     margin-right: 10px;
+  }
+  p .p2{
+    display: none;
   }
 }
